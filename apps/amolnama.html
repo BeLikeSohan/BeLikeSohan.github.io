@@ -70,7 +70,7 @@
             document.getElementById('result').style.display = 'none';
             document.getElementById('error').style.display = 'none';
 
-            const apiUrl = `http://software.diu.edu.bd:8006/result?grecaptcha=&semesterId=${semesterId}&studentId=${studentId}`;
+            const apiUrl = `https://crp.daffodilvarsity.edu.bd/api/result.php?semester_id=${semesterId}&student_id=${studentId}`;
 
             fetch(apiUrl)
                 .then(response => {
